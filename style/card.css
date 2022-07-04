@@ -6,7 +6,9 @@
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    width: 500px;
+    min-width: 500px;
+    max-width:600px;
+    width: 40vw;
     height: 50vh;
 }
 
@@ -16,7 +18,7 @@
 
 .right-side {
     height: 100%;
-    padding: 15px 20px;
+    padding: 0 20px;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-evenly;
@@ -31,6 +33,7 @@
     text-transform: uppercase;
     color: hsl(228, 12%, 48%);
     letter-spacing: 5px;
+    font-size: 14px;
 }
 
 .card h1 {
@@ -71,4 +74,31 @@ button#add-to-cart {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 0.2s ease-in-out;
+}
+
+button#add-to-cart:hover{
+    background-color: hsl(157, 61%, 15%);
+}
+
+button#add-to-cart .shop-cart{
+    margin-right: 10px;
+}
+
+/* MOBILE - RESPONSIVE */
+
+@media screen and ( max-width: 375px ){
+
+    .card {
+        min-width: 190px;
+        width: 80vw;
+        height: 550px;
+        flex-flow: column nowrap;
+    }
+
+    .image-left {
+        height: 35%;
+        width: 100%;
+        object-fit: cover;
+    }
 }
