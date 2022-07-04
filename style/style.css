@@ -1,3 +1,15 @@
 body{
     background-color: hsl(30, 38%, 92%);
-} 
+    display: flex;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.card{
+    background-color: green;
+    border-radius: 10px;
+    padding: 10px;
+}
