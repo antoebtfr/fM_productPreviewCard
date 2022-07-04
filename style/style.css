@@ -2,14 +2,15 @@ body{
     background-color: hsl(30, 38%, 92%);
     display: flex;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     align-items: center;
     justify-content: center;
     height: 100vh;
 }
 
-.card{
-    background-color: green;
-    border-radius: 10px;
-    padding: 10px;
+p{
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+    font-family: 'Montserrat', sans-serif;
 }
+
